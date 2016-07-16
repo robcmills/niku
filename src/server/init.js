@@ -7,4 +7,3 @@ module.exports.run = function () {
   });
   require('babel-polyfill');
 };
-
