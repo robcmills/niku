@@ -4,11 +4,12 @@ import {Map as iMap, fromJS} from 'immutable';
 import makeStore from './makeStore';
 import Root from './Root';
 
-const {auth, routing, form} = window.__INITIAL_STATE__;
+const {auth, navigation, routing, form} = window.__INITIAL_STATE__;
 
 // form & routing are currently regular JS objects. This may change in the future
 const initialState = iMap([
   ['auth', fromJS(auth)],
+  ['navigation', fromJS(navigation)],
   ['routing', routing],
   ['form', form]
 ]);
